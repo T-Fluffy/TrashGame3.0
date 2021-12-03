@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CSS only recycling game in nature (the seas in particular) edit version</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Starting the game  -->
+<div class="startScreen">
+  <div class="rules rules1">
+    <div class="rulesCont">
+      <h1 class="test ">It’s raining rubbish in the sea!</h1>
+      <p> The see polution is making lots of damage to nature !</br>
+          But fear not, you can do your bit to help. </br>
+          Click to recycle the good rubbish.</p>
+      <div class="items">
+        <div class="avoid">
+          <h2>AVOID <span style="color: #b43939">-1 Points</span></h2>
+          <div class="item avoid1">
+            <img src="https://res.cloudinary.com/dilgjzsjl/image/upload/v1517505548/hcc/icons/bad4.svg" alt="">
+            <p>Yoghurt pots</p>
+          </div>
+          <div class="item avoid2">
+            <img src="https://res.cloudinary.com/dilgjzsjl/image/upload/v1517505548/hcc/icons/bad5.svg" alt="">
+            <p>Food trays </p>
+          </div>
+          <div class="item avoid3">
+            <img src="https://res.cloudinary.com/dilgjzsjl/image/upload/v1517505548/hcc/icons/bad3.svg" alt="">
+            <p>Items tied in a plastic bag</p>
+          </div>
+        </div>
+
+        <div class="collect">
+          <h2>COLLECT <span style="color: #56b439">+2 Points</span></h2>
+          <div class="item collect1">
+            <img src="https://res.cloudinary.com/dilgjzsjl/image/upload/v1517505548/hcc/icons/good1.svg" alt="">
+            <p>Clean drinks bottle without lid</p>
+          </div>
+          <div class="item collect2">
+            <img src="https://res.cloudinary.com/dilgjzsjl/image/upload/v1517505548/hcc/icons/good2.svg" alt="">
+            <p>Clean shampoo bottle without lid</p>
+          </div>
+          <div class="item collect3">
+            <img src="https://res.cloudinary.com/dilgjzsjl/image/upload/v1517505548/hcc/icons/good3.svg" alt="">
+            <p>Clean detergent bottle without lid</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="endScreen">
+  <div class="rules rules1">
+    <div class="rulesCont">
+      <h1> Good Job!</h1>
+      You did great ! Keep Recycling the Garbage and protecting the sea</h3>
+      <p>Reload the page to try again, have fun</p>
+    </div>
+  </div>
+</div>
+
+<div class="game">
+  <div id="goodObjects">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+    <input type="checkbox" class="goodObject object">
+  </div>
+
+  <div id="badObjects">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+    <input type="checkbox" class="badObject object">
+  </div>
+  <h3 class="score"></h3>
+  <div class="countdownBar"></div>
+</div>
+</div>
+<!-- just some Js, if you wana chek it out... -->
+  <script  src="js/script.js"></script>
+</body>
+</html>

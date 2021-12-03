@@ -1,0 +1,442 @@
+@import url("https://use.typekit.net/ykf1xtx.css");
+body {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "sofia-pro", sans-serif;
+  cursor: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1518293165/hcc/hand4.svg"), auto;
+  counter-reset: game;
+}
+
+.game {
+  width: 100%;
+  height: 100%;
+  background-color: #6ecddd;
+  z-index: 1;
+}
+
+.goodObject:checked {
+  counter-increment: game 2;
+}
+
+.badObject:checked {
+  counter-increment: game -1;
+}
+
+.score::after {
+  content: counter(game);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  text-align: center;
+}
+
+#badObjects input[type="checkbox"],
+#goodObjects input[type="checkbox"] {
+  width: 120px;
+  top: -180px;
+  height: 120px;
+  position: absolute;
+  background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  cursor: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1518293165/hcc/grab4.svg"), auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.goodObject:nth-child(1) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good3.svg");
+  animation-duration: 3.4744643861s;
+  animation-delay: 7.0444598168s;
+  left: 91%;
+}
+.goodObject:nth-child(2) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good2.svg");
+  animation-duration: 4.9042281371s;
+  animation-delay: 7.6269474998s;
+  left: 78%;
+}
+.goodObject:nth-child(3) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good1.svg");
+  animation-duration: 3.2022453772s;
+  animation-delay: 7.3421092081s;
+  left: 57%;
+}
+.goodObject:nth-child(4) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good2.svg");
+  animation-duration: 5.2535176228s;
+  animation-delay: 6.789334505s;
+  left: 29%;
+}
+.goodObject:nth-child(5) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good3.svg");
+  animation-duration: 4.627022332s;
+  animation-delay: 5.4316858496s;
+  left: 28%;
+}
+.goodObject:nth-child(6) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good3.svg");
+  animation-duration: 4.9790211743s;
+  animation-delay: 6.4266110482s;
+  left: 64%;
+}
+.goodObject:nth-child(7) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good2.svg");
+  animation-duration: 3.547738133s;
+  animation-delay: 6.2572996077s;
+  left: 86%;
+}
+.goodObject:nth-child(8) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good1.svg");
+  animation-duration: 5.8651355583s;
+  animation-delay: 6.3105824403s;
+  left: 68%;
+}
+.goodObject:nth-child(9) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good2.svg");
+  animation-duration: 5.3756616s;
+  animation-delay: 7.2048059847s;
+  left: 1%;
+}
+.goodObject:nth-child(10) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/good2.svg");
+  animation-duration: 5.9229579278s;
+  animation-delay: 6.0287638628s;
+  left: 43%;
+}
+
+.badObject:nth-child(1) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad4.svg");
+  animation-duration: 3.0048926265s;
+  animation-delay: 6.3878947981s;
+  left: 57%;
+}
+.badObject:nth-child(2) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad5.svg");
+  animation-duration: 5.8732764783s;
+  animation-delay: 6.0295008607s;
+  left: 85%;
+}
+.badObject:nth-child(3) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad2.svg");
+  animation-duration: 4.9781966188s;
+  animation-delay: 5.1430611331s;
+  left: 64%;
+}
+.badObject:nth-child(4) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad3.svg");
+  animation-duration: 4.5533462408s;
+  animation-delay: 7.9682929393s;
+  left: 43%;
+}
+.badObject:nth-child(5) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad1.svg");
+  animation-duration: 3.318794704s;
+  animation-delay: 7.2585366343s;
+  left: 25%;
+}
+.badObject:nth-child(6) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad2.svg");
+  animation-duration: 3.2126611212s;
+  animation-delay: 5.2985928787s;
+  left: 13%;
+}
+.badObject:nth-child(7) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad5.svg");
+  animation-duration: 3.1367608456s;
+  animation-delay: 6.886689463s;
+  left: 2%;
+}
+.badObject:nth-child(8) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad5.svg");
+  animation-duration: 5.9833230933s;
+  animation-delay: 7.9615034484s;
+  left: 66%;
+}
+.badObject:nth-child(9) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad5.svg");
+  animation-duration: 4.5842187536s;
+  animation-delay: 6.8960710855s;
+  left: 88%;
+}
+.badObject:nth-child(10) {
+  background: url("https://res.cloudinary.com/dilgjzsjl/image/upload/v1517495694/hcc/icons/bad1.svg");
+  animation-duration: 3.9662913178s;
+  animation-delay: 5.9595199204s;
+  left: 67%;
+}
+
+.score {
+  margin: 0;
+  color: #f0f8ff24;
+  font-size: 80vh;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+input[type="checkbox"] {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="checkbox"]:checked {
+  pointer-events: none;
+  -webkit-animation: hitFade 2s;
+  animation: hitFade 2s;
+}
+
+@keyframes hitFade {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#badObjects input[type="checkbox"]:checked:after {
+  position: fixed;
+  left: 0;
+  top: 20vh;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  content: '-1!';
+  font-size: 8.5em;
+  font-weight: 600;
+  color: red;
+  animation: fade 1s;
+  opacity: 0;
+}
+
+#goodObjects input[type="checkbox"]:checked:after {
+  position: fixed;
+  left: 0;
+  top: 20vh;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  content: '+2!';
+  font-size: 8.5em;
+  font-weight: 600;
+  color: white;
+  animation: fade 1s;
+  opacity: 0;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.goodObject,
+.badObject {
+  animation-name: falling;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 3;
+}
+
+@keyframes falling {
+  from {
+    transform: translateY(-120px);
+  }
+  to {
+    transform: translateY(150vh);
+  }
+}
+.rules {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 0px 50px 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 2px 1px 1px rgba(56, 58, 68, 0.466);
+  box-shadow: 2px 2px 1px 1pxrgba 56, 58, 68, 0.466;
+  border-radius: 6px;
+  z-index: 9999;
+  overflow-y: scroll;
+  max-height: 90vh;
+}
+
+.rules h1 {
+  text-align: center;
+  font-weight: 900;
+  font-family: "sofia-pro", sans-serif;
+}
+
+.rulesCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.items {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  justify-content: space-around;
+}
+
+.items img {
+  width: 40px;
+  height: 40px;
+}
+
+.item {
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+.avoid,
+.collect {
+  position: relative;
+  width: 40%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.startScreen,
+.endScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(https://res.cloudinary.com/dilgjzsjl/image/upload/f_auto,q_auto:best/v1516981596/hcc/bg/1.png);
+}
+
+.startScreen {
+  opacity: 0;
+  z-index: -9999;
+  animation: fadeOut 4s linear;
+}
+
+.endScreen {
+  opacity: 1;
+  z-index: 9999;
+  animation: fadeIn 25s linear;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  90% {
+    opacity: 1;
+    z-index: 9999;
+  }
+  98% {
+    opacity: 0;
+    z-index: 9999;
+  }
+  100% {
+    z-index: -9999;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    z-index: -9999;
+  }
+  97% {
+    opacity: 0;
+    z-index: -9999;
+  }
+  98% {
+    opacity: 0;
+    z-index: 9999;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.countdownBar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  background-color: #9edbe8;
+  height: 50px;
+}
+
+.countdownBar:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #388da0;
+  left: 0;
+  animation: countDown 20s 5s linear;
+}
+
+@keyframes countDown {
+  0% {
+    width: 0%;
+  }
+  85% {
+    width: 85%;
+    background-color: #388da0;
+  }
+  85.1% {
+    width: 85.1%;
+    background-color: #c56971;
+  }
+  100% {
+    width: 100%;
+    background-color: #c56971;
+  }
+}
